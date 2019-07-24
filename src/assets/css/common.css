@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*清理浮动*/
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  zoom: 1;
+}
+
+/*单行溢出文字省略*/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*文字不折行*/
+/*多行文字溢出省略号*/
+.multi_line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+/*改变导航栏样式*/
+/*::-webkit-scrollbar{*/
+  /*width: 8px;*/
+  /*height: 8px;*/
+  /*background-color:rgb(50, 64, 87);*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb {*/
+  /*cursor: pointer;*/
+  /*border-radius: 8px;*/
+  /*background-color: rgba(30, 47, 76, 0.92);*/
+/*}*/
